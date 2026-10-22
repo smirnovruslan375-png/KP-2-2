@@ -5,6 +5,7 @@ import Framework7Vue, { registerComponents } from 'framework7-vue/bundle'
 import 'framework7/css/bundle'
 import 'framework7-icons/css/framework7-icons.css'
 import './style.css'
+import './css/app.css'
 
 import App from './App.vue'
 

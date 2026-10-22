@@ -1,72 +1,46 @@
 <template>
   <f7-page name="about">
-    <f7-navbar title="Про TaskFlow" back-link="Назад" />
+    <f7-navbar title="Про застосунок" />
 
     <div class="app-content">
-      <header class="welcome-block">
-        <h1>Про застосунок</h1>
-        <p>
-          Усе необхідне для організації справ і контролю
-          особистої продуктивності в одному місці.
-        </p>
-      </header>
-
-      <section class="about-hero">
-        <div class="about-logo">✓</div>
-        <h2>TaskFlow</h2>
-        <p class="about-version">Менеджер особистих завдань</p>
-        <p>
-          TaskFlow — прогресивний вебзастосунок для організації
-          завдань і відстеження особистої продуктивності.
-        </p>
-      </section>
-
-      <div class="section-header">
-        <h2>Використані технології</h2>
+      <div class="page-heading">
+        <h1>Про TaskFlow</h1>
+        <p>Інформація про застосунок</p>
       </div>
 
-      <section class="technology-list">
-        <article class="technology-card">
-          <div class="technology-icon icon-vue">V</div>
-          <div class="technology-info">
-            <h3>Vue 3</h3>
-            <p>Створення інтерфейсу користувача</p>
-          </div>
-        </article>
+      <div class="info-card">
+        <div class="app-logo">
+          <f7-icon f7="checkmark_circle_fill" />
+        </div>
 
-        <article class="technology-card">
-          <div class="technology-icon icon-framework">F7</div>
-          <div class="technology-info">
-            <h3>Framework7</h3>
-            <p>Готові компоненти інтерфейсу</p>
-          </div>
-        </article>
+        <h2>TaskFlow</h2>
+        <p>
+          Прогресивний вебзастосунок для організації
+          завдань і відстеження особистої продуктивності.
+        </p>
+      </div>
 
-        <article class="technology-card">
-          <div class="technology-icon icon-vite">V</div>
-          <div class="technology-info">
-            <h3>Vite</h3>
-            <p>Розробка та збірка проєкту</p>
-          </div>
-        </article>
+      <div class="info-card">
+        <h3>Використані технології</h3>
 
-        <article class="technology-card">
-          <div class="technology-icon icon-pwa">P</div>
-          <div class="technology-info">
-            <h3>PWA</h3>
-            <p>Кешування та можливість встановлення</p>
-          </div>
-        </article>
-      </section>
+        <div class="technology-list">
+          <span>Vue 3</span>
+          <span>Framework7</span>
+          <span>Vite</span>
+          <span>PWA</span>
+        </div>
+      </div>
 
-      <f7-button
-        class="about-button"
-        fill
-        large
-        href="/"
-      >
-        На головну
-      </f7-button>
+      <div class="info-card">
+        <h3>Версія</h3>
+        <p>1.0.0 — навчальний проєкт</p>
+      </div>
     </div>
+
+    <AppTabbar active="about" />
   </f7-page>
 </template>
+
+<script setup>
+import AppTabbar from '../components/AppTabbar.vue'
+</script>

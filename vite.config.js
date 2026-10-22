@@ -15,16 +15,24 @@ export default defineConfig({
       },
 
       manifest: {
-        id: '/',
-        name: 'TaskFlow',
-        short_name: 'TaskFlow',
-        description: 'Застосунок для керування завданнями',
-        theme_color: '#2563eb',
-        background_color: '#f5f7fb',
-        display: 'standalone',
-        start_url: '/',
-        scope: '/',
-      },
+  id: '/',
+  name: 'TaskFlow',
+  short_name: 'TaskFlow',
+  description: 'Застосунок для керування завданнями',
+  theme_color: '#2563eb',
+  background_color: '#f5f7fb',
+  display: 'standalone',
+  start_url: '/',
+  scope: '/',
+  icons: [
+    {
+      src: '/taskflow-icon.svg',
+      sizes: 'any',
+      type: 'image/svg+xml',
+      purpose: 'any',
+    },
+  ],
+},
 
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,ico}'],
